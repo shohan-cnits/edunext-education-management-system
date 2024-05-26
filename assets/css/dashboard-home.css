@@ -69,3 +69,98 @@ label {
 /* ====================
   Reset Default CSS End
   ==================== */
+
+/* Sidebar Start */
+#sidebar {
+  position: fixed;
+  width: 260px;
+  height: 100%;
+  background: var(--primary-color);
+  top: 0;
+  left: 0;
+}
+
+#sidebar .brand .icon img {
+  width: 50px;
+}
+
+#sidebar .brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  background: var(--white);
+}
+
+#sidebar .brand img {
+  width: 120px;
+}
+
+#sidebar .icon {
+  display: flex;
+  min-width: 48px;
+  justify-content: center;
+  align-items: center;
+}
+
+#sidebar .side-menu li a .icon svg {
+  width: 40px !important;
+  height: 30px;
+}
+
+#sidebar .side-menu .icon-right svg {
+  width: 30px;
+}
+
+#sidebar .side-menu {
+  margin: 30px 0;
+}
+
+#sidebar .side-menu a {
+  display: flex;
+  color: var(--white);
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  padding: 12px 16px 12px 0;
+
+  border-radius: 6px 0 0 6px;
+  transition: all 0.3s ease;
+}
+
+#sidebar .side-menu > li > a {
+  margin: 10px 0 0 10px;
+}
+
+#sidebar .side-menu > li > a:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+#sidebar .side-menu > li > a:hover path {
+  /* fill: var(--primary-color); */
+  stroke: var(--primary-color);
+}
+
+#sidebar .side-menu > li > a:hover .icon-right svg path {
+  fill: var(--black);
+}
+
+#sidebar .side-menu > li > a .icon-right {
+  float: inline-end;
+}
+
+#sidebar .side-menu > li > a.active,
+#sidebar .side-menu > li > a.active:hover {
+  background: var(--white);
+  color: var(--black);
+}
+
+#sidebar .side-dropdwon {
+  padding-left: 30px !important;
+  overflow-y: hidden;
+  max-height: 0;
+  transition: all 0.3s ease;
+}
+
+/* Sidebar End */
