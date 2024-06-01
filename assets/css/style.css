@@ -102,11 +102,11 @@ body {
   margin-top: 15px !important;
 }
 
-.sidebar-nav .active {
-  margin: 10px 0 0 10px;
+.sidebar-nav .active .sidebar_active_link {
+  margin: 5px 0 0 5px;
   padding: 10px;
   background: var(--white);
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px !important;
   display: flex !important;
   word-wrap: nowrap !important;
   align-items: center !important;
@@ -117,9 +117,13 @@ body {
   font-size: 14px;
 }
 
-.lni svg {
-  width: 30px;
-  height: 25px;
+.sidebar-nav .active .lni svg rect {
+  stroke: #053b50 !important;
+}
+
+.sidebar-nav .active .nin svg path {
+  stroke: var(--primary-color) !important;
+  fill: none !important;
 }
 
 #sidebar.hide .sidebar-item span {
@@ -129,9 +133,9 @@ body {
   transition: 0.5s ease-in-out !important;
 }
 
-#sidebar.hide .sidebar-nav .active {
-  margin: 8px 8px;
-  border-radius: 6px;
+#sidebar.hide .sidebar-nav .active .sidebar_active_link {
+  margin: 0px 7px 0 0px !important;
+  border-radius: 5px 5px !important;
 }
 
 #sidebar.hide .lni svg {
@@ -167,7 +171,7 @@ a.sidebar-link {
 
 .navbar_right_arraw svg {
   width: 10px;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .navbar_name {
@@ -196,6 +200,15 @@ a.sidebar-link {
 
 .sidebar_menu .sidebar-items a {
   color: var(--white);
+  display: flex;
+  padding: 0 0 0 10px;
+  align-items: center;
+  justify-content: start;
+  font-size: 14px;
+}
+
+.sidebar_menu .active a {
+  color: var(--white);
   /* margin-left: 35px; */
   position: relative;
   display: flex;
@@ -205,7 +218,7 @@ a.sidebar-link {
   font-size: 14px;
 }
 
-.sidebar_menu .sidebar-items a::after {
+.sidebar_menu .active a::after {
   width: 8px;
   height: 8px;
   background: #2e97a7;
@@ -213,7 +226,7 @@ a.sidebar-link {
   content: "";
   top: 36%;
   border-radius: 50%;
-  left: 8%;
+  left: 3%;
 }
 
 .nav_menu_right_arraw svg {
@@ -232,7 +245,7 @@ a.sidebar-link {
 
 .sidebar-menu_items a {
   display: block !important;
-  text-align: center;
+  margin-left: 30px;
 }
 
 .sidebar-menu_items a::after {
@@ -254,7 +267,7 @@ a.sidebar-link {
   position: fixed;
   top: 0;
   left: 0;
-  width: 220px;
+  width: 300px;
   height: 100%;
   background: var(--primary-color) !important;
   z-index: 2000;
@@ -293,7 +306,7 @@ a.sidebar-link {
   position: sticky;
   top: 0;
   left: 0;
-  background: var(--light);
+  background: var(--white);
   z-index: 500;
   box-sizing: content-box;
 }
@@ -303,13 +316,23 @@ a.sidebar-link {
   justify-content: center;
 }
 
+.sidebar-menu_items a:hover {
+  color: rgba(110, 214, 255, 1);
+}
+
+.dark_mode i {
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999909;
+}
+
 /* SIDEBAR */
 
 /* CONTENT */
 #content {
   position: relative;
-  width: calc(100% - 220px);
-  left: 220px;
+  width: calc(100% - 300px);
+  left: 300px;
   transition: 0.3s ease;
 }
 #sidebar.hide ~ #content {
@@ -320,10 +343,10 @@ a.sidebar-link {
 /* NAVBAR */
 #content nav {
   height: 56px;
-  background: var(--light);
+  background: var(--white);
   padding: 0 24px;
-  display: flex;
-  align-items: center;
+  display: flex !important;
+  align-items: center !important;
   grid-gap: 24px;
   font-family: var(--lato);
   position: sticky;
@@ -332,16 +355,7 @@ a.sidebar-link {
   left: 0;
   z-index: 1000;
 }
-#content nav::before {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  bottom: -40px;
-  left: 0;
-  border-radius: 50%;
-  box-shadow: -20px -20px 0 var(--light);
-}
+
 #content nav a {
   color: var(--dark);
 }
@@ -371,11 +385,12 @@ a.sidebar-link {
   padding: 0 16px;
   height: 100%;
   border: none;
-  background: var(--grey);
-  border-radius: 36px 0 0 36px;
+  background: rgba(245, 254, 255, 1);
   outline: none;
   width: 100%;
-  color: var(--dark);
+  border: 1px solid rgba(5, 59, 80, 1);
+  border-radius: 5px;
+  color: var(--black);
 }
 #content nav form .form-input button {
   width: 36px;
@@ -391,32 +406,55 @@ a.sidebar-link {
   border-radius: 0 36px 36px 0;
   cursor: pointer;
 }
+
 #content nav .notification {
-  font-size: 20px;
-  position: relative;
-}
-#content nav .notification .num {
-  position: absolute;
-  top: -6px;
-  right: -6px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 2px solid var(--light);
-  background: var(--red);
-  color: var(--light);
-  font-weight: 700;
-  font-size: 12px;
+  width: 35px;
+  height: 35px;
   display: flex;
-  justify-content: center;
   align-items: center;
-}
-#content nav .profile img {
-  width: 36px;
-  height: 36px;
-  object-fit: cover;
+  justify-content: center;
+  border: 1px solid var(--primary-color) !important;
   border-radius: 50%;
+  transition: 0.5s ease;
 }
+
+#content nav .notification:hover {
+  background: var(--primary-color);
+}
+
+#content nav .notification:hover svg path {
+  stroke: var(--white);
+  fill: var(--white);
+}
+
+.notification svg {
+  width: 20px !important;
+}
+
+#content nav .profile {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  transition: 0.5s ease;
+}
+
+#content nav .profile:hover {
+  background: var(--primary-color);
+}
+
+#content nav .profile:hover svg path {
+  stroke: var(--white);
+  fill: var(--white);
+}
+
+#content nav .profile svg {
+  width: 22px;
+}
+
 #content nav .switch-mode {
   display: block;
   min-width: 50px;
@@ -439,6 +477,55 @@ a.sidebar-link {
 }
 #content nav #switch-mode:checked + .switch-mode::before {
   left: calc(100% - (25px - 4px) - 2px);
+}
+
+@media screen and (max-width: 770px) {
+  #content nav .notification {
+    width: 35px;
+    height: 35px;
+  }
+
+  #content nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 10px !important;
+  }
+
+  #content nav .profile {
+    border: none;
+    width: 50%;
+  }
+
+  #content nav .notification:hover {
+    background: none;
+  }
+
+  #content nav .notification {
+    border: none !important;
+    width: 50%;
+  }
+
+  #content nav .profile {
+    background: white;
+  }
+
+  #content nav .profile:hover svg path {
+    stroke: var(--primary-color) !important;
+    fill: var(--primary-color) !important;
+  }
+}
+
+@media screen and (max-width: 577px) {
+  #content nav label {
+    display: none !important;
+  }
+  #content nav {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 0px !important;
+  }
 }
 /* NAVBAR */
 

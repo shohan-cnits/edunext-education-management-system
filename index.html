@@ -28,8 +28,8 @@
     <!-- SIDEBAR -->
     <section id="sidebar">
       <a href="#" class="brand">
-        <i class=""
-          ><svg
+        <i class="">
+          <svg
             width="133"
             height="99"
             viewBox="0 0 133 99"
@@ -215,7 +215,7 @@
       </a>
       <ul class="sidebar-nav">
         <li class="sidebar-item active">
-          <a href="#" class="sidebar-link">
+          <a href="#" class="sidebar-link sidebar_active_link">
             <i class="lni">
               <svg
                 width="54"
@@ -230,7 +230,7 @@
                   width="17"
                   height="17"
                   rx="1.5"
-                  stroke="#2E97A7"
+                  stroke="#fff"
                   stroke-width="3"
                 />
                 <rect
@@ -239,7 +239,7 @@
                   width="17"
                   height="17"
                   rx="1.5"
-                  stroke="#2E97A7"
+                  stroke="#fff"
                   stroke-width="3"
                 />
                 <rect
@@ -248,7 +248,7 @@
                   width="25"
                   height="24"
                   rx="1.5"
-                  stroke="#2E97A7"
+                  stroke="#fff"
                   stroke-width="3"
                 />
                 <rect
@@ -257,7 +257,7 @@
                   width="17"
                   height="17"
                   rx="1.5"
-                  stroke="#2E97A7"
+                  stroke="#fff"
                   stroke-width="3"
                 />
               </svg>
@@ -265,17 +265,16 @@
             <span style="font-weight: 500" class="navbar_name">Dashboard</span>
           </a>
         </li>
-
         <li class="sidebar-item">
           <a
             href="#"
-            class="sidebar-link collapsed has-dropdown"
+            class="sidebar-link collapsed has-dropdown sidebar_active_link"
             data-bs-toggle="collapse"
             data-bs-target="#multi"
             aria-expanded="false"
             aria-controls="multi"
           >
-            <i class="lni"
+            <i class="lni nin"
               ><svg
                 width="40"
                 height="42"
@@ -292,28 +291,29 @@
                 />
               </svg>
             </i>
-            <span style="font-weight: 600" class="navbar_name">Students</span>
-            <span class="navbar_right_arraw"
-              ><svg
-                width="23"
-                height="33"
-                viewBox="0 0 23 33"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
-                  fill="white"
-                />
-              </svg>
-            </span>
+            <span style="font-weight: 600" class="navbar_name"
+              >Students
+              <span class="navbar_right_arraw nin"
+                ><svg
+                  width="23"
+                  height="33"
+                  viewBox="0 0 23 33"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                    fill="white"
+                  />
+                </svg> </span
+            ></span>
           </a>
           <ul
             id="multi"
             class="sidebar-dropdown list-unstyled collapse sidebar_menu"
             data-bs-parent="#sidebar"
           >
-            <li class="sidebar-item sidebar-items">
+            <li class="sidebar-item sidebar-items active">
               <a
                 href="#"
                 class="sidebar-link collapsed"
@@ -353,225 +353,376 @@
                 </li>
               </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items active">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-two"
+                data-bs-target="#multi2"
                 aria-expanded="false"
-                aria-controls="multi-two"
+                aria-controls="multi"
               >
-                Two Links
+                Class
+                <span class="nav_menu_right_arraw"
+                  ><svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
               </a>
               <ul
-                id="multi-two"
-                class="sidebar-dropdown list-unstyled collapse"
+                id="multi2"
+                class="sidebar-dropdown list-unstyled collapse sidebar-dropdown_item"
               >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Add Class</a>
                 </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">View Class List</a>
+                </li>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Class Update</a>
                 </li>
               </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items active">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-thrie"
+                data-bs-target="#multi3"
                 aria-expanded="false"
-                aria-controls="multi-thrie"
+                aria-controls="multi"
               >
-                Two Links
+                Group
+                <span class="nav_menu_right_arraw"
+                  ><svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
               </a>
               <ul
-                id="multi-thrie"
-                class="sidebar-dropdown list-unstyled collapse"
+                id="multi3"
+                class="sidebar-dropdown list-unstyled collapse sidebar-dropdown_item"
               >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Add Class</a>
                 </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">View Class List</a>
+                </li>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Class Update</a>
                 </li>
               </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items active">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-four"
+                data-bs-target="#multi4"
                 aria-expanded="false"
-                aria-controls="multi-four"
+                aria-controls="multi-one"
               >
-                Two Links
+                Section
+                <span class="nav_menu_right_arraw"
+                  ><svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
               </a>
               <ul
-                id="multi-four"
-                class="sidebar-dropdown list-unstyled collapse"
+                id="multi4"
+                class="sidebar-dropdown list-unstyled collapse sidebar-dropdown_item"
               >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Add Class</a>
                 </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">View Class List</a>
+                </li>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Class Update</a>
                 </li>
               </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items active">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-five"
+                data-bs-target="#multi5"
                 aria-expanded="false"
-                aria-controls="multi-five"
+                aria-controls="multi-one"
               >
-                Two Links
+                Session
+                <span class="nav_menu_right_arraw"
+                  ><svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
               </a>
               <ul
-                id="multi-five"
-                class="sidebar-dropdown list-unstyled collapse"
+                id="multi5"
+                class="sidebar-dropdown list-unstyled collapse sidebar-dropdown_item"
               >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Add Class</a>
                 </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">View Class List</a>
+                </li>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Class Update</a>
                 </li>
               </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items active">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-six"
+                data-bs-target="#multi6"
                 aria-expanded="false"
-                aria-controls="multi-six"
+                aria-controls="multi"
               >
-                Two Links
+                Subject
+                <span class="nav_menu_right_arraw"
+                  ><svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="white"
+                    />
+                  </svg>
+                </span>
               </a>
               <ul
-                id="multi-six"
-                class="sidebar-dropdown list-unstyled collapse"
+                id="multi6"
+                class="sidebar-dropdown list-unstyled collapse sidebar-dropdown_item"
               >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Add Class</a>
                 </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">View Class List</a>
+                </li>
+                <li class="sidebar-item sidebar-menu_items">
+                  <a href="#" class="sidebar-link">Class Update</a>
                 </li>
               </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-seven"
+                data-bs-target="#multi7"
                 aria-expanded="false"
-                aria-controls="multi-seven"
+                aria-controls="multi"
               >
-                Two Links
+                Add New Student
+                <span class="nav_menu_right_arraw">
+                  <svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="#282828"
+                    />
+                  </svg>
+                </span>
               </a>
-              <ul
-                id="multi-seven"
-                class="sidebar-dropdown list-unstyled collapse"
-              >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
-                </li>
-              </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-eight"
+                data-bs-target="#multi-one"
                 aria-expanded="false"
-                aria-controls="multi-eight"
+                aria-controls="multi-one"
               >
-                Two Links
+                Student Lists
+                <span class="nav_menu_right_arraw">
+                  <svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="#282828"
+                    />
+                  </svg>
+                </span>
               </a>
-              <ul
-                id="multi-eight"
-                class="sidebar-dropdown list-unstyled collapse"
-              >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
-                </li>
-              </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-nine"
+                data-bs-target="#multi8"
                 aria-expanded="false"
-                aria-controls="multi-nine"
+                aria-controls="multi"
               >
-                Two Links
+                Student Registration
+                <span class="nav_menu_right_arraw">
+                  <svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="#282828"
+                    />
+                  </svg>
+                </span>
               </a>
-              <ul
-                id="multi-nine"
-                class="sidebar-dropdown list-unstyled collapse"
-              >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
-                </li>
-              </ul>
             </li>
-            <li class="sidebar-item">
+            <li class="sidebar-item sidebar-items">
               <a
                 href="#"
                 class="sidebar-link collapsed"
                 data-bs-toggle="collapse"
-                data-bs-target="#multi-ten"
+                data-bs-target="#multi9"
                 aria-expanded="false"
-                aria-controls="multi-ten"
+                aria-controls="multi"
               >
-                Two Links
+                Edit Student Registration
+                <span class="nav_menu_right_arraw">
+                  <svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="#282828"
+                    />
+                  </svg>
+                </span>
               </a>
-              <ul
-                id="multi-ten"
-                class="sidebar-dropdown list-unstyled collapse"
+            </li>
+            <li class="sidebar-item sidebar-items">
+              <a
+                href="#"
+                class="sidebar-link collapsed"
+                data-bs-toggle="collapse"
+                data-bs-target="#multi9"
+                aria-expanded="false"
+                aria-controls="multi"
               >
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 1</a>
-                </li>
-                <li class="sidebar-item">
-                  <a href="#" class="sidebar-link">Link 2</a>
-                </li>
-              </ul>
+                Registered Student List
+                <span class="nav_menu_right_arraw">
+                  <svg
+                    width="23"
+                    height="33"
+                    viewBox="0 0 23 33"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.5275 0.849485C0.176154 2.06722 0.176154 4.18695 1.5275 5.40468L13.8402 16.5L1.5275 27.5953C0.176158 28.8131 0.176157 30.9328 1.5275 32.1505C2.69391 33.2016 4.4659 33.2016 5.63232 32.1505L23 16.5L5.63232 0.849485C4.4659 -0.201605 2.69391 -0.201605 1.5275 0.849485Z"
+                      fill="#282828"
+                    />
+                  </svg>
+                </span>
+              </a>
             </li>
           </ul>
         </li>
 
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link">
-            <i class="lni lni-cog"></i>
+          <a href="#" class="sidebar-link sidebar_active_link">
+            <i class="lni nin">
+              <svg
+                width="62"
+                height="36"
+                viewBox="0 0 62 36"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.9153 34.5593H1.55367C1.31547 34.5593 1.11088 34.3935 1.07927 34.1574C0.894218 32.7753 0.655278 28.1757 5.16262 25.8499M10.0161 24.565L13.5306 31.774M10.0161 24.565C9.15718 24.6426 8.37859 24.7703 7.67301 24.9396M10.0161 24.565L10.8528 22.2712M13.5306 31.774L16.7104 24.565M13.5306 31.774L6.75383 28.2254C6.51739 28.1016 6.41692 27.8161 6.52372 27.5715L7.67301 24.9396M13.5306 31.774L19.792 28.2493C20.0328 28.1139 20.1213 27.811 19.9914 27.5672L18.5916 24.9396M16.7104 24.565C17.3865 24.6804 18.0123 24.8052 18.5916 24.9396M16.7104 24.565L16.041 22.2712M7.67301 24.9396C6.70515 25.1719 5.87466 25.4825 5.16262 25.8499M18.5916 24.9396C19.7337 25.2046 20.6949 25.5072 21.5045 25.8499M10.8528 22.2712C12.9426 23.1804 14.0853 23.2762 16.041 22.2712M10.8528 22.2712C8.22247 21.019 7.35634 19.13 7.63998 12.7789C7.65494 12.4439 7.98715 12.2189 8.31138 12.3045C10.256 12.8182 11.3438 12.4001 12.8526 11.2371C13.0518 11.0836 13.1022 10.8056 12.9754 10.5884L11.857 8.67231C13.8886 11.7507 15.4614 12.7853 18.7652 13.0631C19.0236 13.0848 19.2306 13.2933 19.2412 13.5523C19.4577 18.8712 18.7733 20.8771 16.041 22.2712M5.16262 25.8499C4.6645 11.5933 5.55761 5.51177 13.5306 5.06779C22.6297 5.47953 22.3685 12.6134 21.5045 25.8499M21.5045 25.8499C22.5837 26.3068 23.3934 26.8351 24.0024 27.4407"
+                  stroke="white"
+                  stroke-width="1.52542"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M44.9103 34.5593H48.5977M55.2951 22.804V25.389C55.2951 25.6698 55.0674 25.8975 54.7866 25.8975H51.5275C51.2466 25.8975 51.019 25.6698 51.019 25.389V22.804M55.2951 22.804V20.5354M55.2951 22.804C56.2802 22.7688 57.0921 22.8582 57.7608 23.0611M51.019 22.804V20.5354M51.019 22.804C50.0806 22.7423 49.2799 22.7828 48.5977 22.9236M51.019 20.5354C52.6888 21.4089 53.6252 21.3636 55.2951 20.5354M51.019 20.5354C48.9132 19.2827 47.7871 18.01 47.2274 15.9982M55.2951 20.5354C57.2128 19.4884 58.2039 18.2306 58.7073 15.9982M46.7429 11.4611C47.3724 6.64852 48.6197 5.07853 53.0552 5.06779C57.9487 5.22875 58.4226 7.43286 59.164 11.4611M46.7429 11.4611C51.5103 9.62529 54.3551 9.77305 59.164 11.4611M46.7429 11.4611L48.5799 13.1355C48.7045 13.2491 48.878 13.2932 49.0422 13.2547C52.2523 12.5027 54.0192 12.4702 56.6619 13.2391C56.8259 13.2869 57.0032 13.2516 57.1347 13.1426L59.164 11.4611M46.7429 11.4611C46.7615 13.3375 46.8938 14.7991 47.2274 15.9982M46.7429 11.4611C44.1465 12.6781 43.8078 14.9455 47.2274 15.9982M59.164 11.4611C59.1065 13.3304 58.9767 14.8038 58.7073 15.9982M59.164 11.4611C61.6363 12.7456 61.7341 14.5998 58.7073 15.9982M51.0412 17.6481C52.6702 18.6793 53.281 18.8855 55.3173 17.6481M48.5977 22.9236V34.5593M48.5977 22.9236C45.8244 23.4958 45.0082 25.724 44.8581 29.4746M48.5977 34.5593H57.7608M57.7608 23.0611C61.2762 24.1276 60.8325 28.3301 60.7951 34.0513C60.7932 34.3318 60.5658 34.5593 60.2853 34.5593H57.7608M57.7608 23.0611V34.5593"
+                  stroke="white"
+                  stroke-width="1.52542"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M29.8335 24.9747C24.2108 27.6669 19.1145 29.5634 18.8109 34.056C18.7921 34.3339 19.0213 34.5593 19.2999 34.5593H30.5595M29.8335 24.9747C29.6286 28.9334 29.8658 30.9975 30.5595 34.5593M29.8335 24.9747C30.1948 24.7768 30.4204 24.5749 30.5595 24.3017M30.7669 23.1842C30.7669 23.1842 30.7001 24.0254 30.5595 24.3017M30.7669 23.1842C32.5893 23.7953 33.6114 23.7797 35.4338 23.1842M30.7669 23.1842C28.0906 21.4142 26.7896 19.679 26.3519 16.654M35.4338 23.1842C35.4448 23.7085 35.5277 24.046 35.6866 24.3017M35.4338 23.1842C38.1312 21.7944 39.204 19.937 39.6738 16.654M36.4709 24.9747C43.4392 28.3649 47.2544 30.4601 47.2206 34.0963C47.2181 34.3586 46.9958 34.5593 46.7335 34.5593H35.7449M36.4709 24.9747C36.7278 28.8272 36.3513 30.8817 35.7449 34.5593M36.4709 24.9747C36.1177 24.758 35.858 24.5775 35.6866 24.3017M30.5595 34.5593H31.3891M35.7449 34.5593H34.9153M30.5595 24.3017C32.5618 25.4066 33.6843 25.2447 35.6866 24.3017M30.5595 27.1866C31.1411 27.1773 31.5551 27.0765 31.9077 26.8918M35.6866 27.1866C35.1796 27.165 34.8013 27.065 34.4664 26.8918M31.9077 26.8918C32.2282 26.724 32.4978 26.4869 32.7963 26.1862C32.9952 25.9857 33.3162 25.9789 33.522 26.1724C33.8488 26.4797 34.1365 26.7212 34.4664 26.8918M31.9077 26.8918C32.0358 27.2784 32.1911 27.5045 32.4262 27.6574M34.4664 26.8918C34.1968 27.2566 33.9877 27.4909 33.7415 27.6574M32.4262 27.6574C32.5834 27.7595 32.7763 27.829 33.0206 27.8917C33.1066 27.9138 33.1973 27.9114 33.281 27.8823C33.457 27.8211 33.6049 27.7497 33.7415 27.6574M32.4262 27.6574C31.7247 30.347 31.5429 31.8591 31.3891 34.5593M31.3891 34.5593H34.9153M33.7415 27.6574C34.4111 30.3257 34.6061 31.8448 34.9153 34.5593M26.2037 12.441C25.784 12.4885 25.4437 12.4815 25.1666 12.414M26.2037 12.441C26.1858 12.9199 26.1763 13.3757 26.1761 13.8102C26.1755 14.8763 26.2305 15.8148 26.3519 16.654M26.2037 12.441C26.7568 11.9168 27.2619 11.5019 27.7593 11.1726C29.0229 10.3362 30.2376 10.0519 32.0685 9.92905C32.2281 9.91834 32.4093 9.99752 32.5563 9.93442C33.4263 9.56086 35.8696 5.76988 35.8486 6.43751C35.8332 6.93087 37.5076 9.55626 38.7395 11.1726C39.3691 11.9986 39.8831 12.5611 39.997 12.441M39.997 12.441C40.5045 12.5029 40.9125 12.502 41.2415 12.4022M39.997 12.441C39.9735 13.0727 39.9454 13.6686 39.9097 14.2315C39.8535 15.1172 39.7787 15.9211 39.6738 16.654M25.1666 12.414C24.3345 12.2113 24.0709 11.4635 23.9312 10.0106C23.925 9.94657 23.9319 9.8799 23.9503 9.81833C26.3269 1.88392 30.5023 0.0883156 35.8486 1.38187C41.5424 2.17794 41.6082 5.96608 42.4672 9.82934C42.4796 9.88481 42.4828 9.94267 42.476 9.99909C42.2956 11.5072 41.9536 12.1863 41.2415 12.4022M25.1666 12.414C23.1075 13.8008 24.1673 15.2391 26.3519 16.654M41.2415 12.4022C42.8171 14.3585 42.0708 15.2649 39.6738 16.654"
+                  stroke="white"
+                  stroke-width="1.52542"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </i>
             <span class="navbar_name">Setting</span>
           </a>
         </li>
       </ul>
     </section>
-
     <!-- SIDEBAR -->
 
     <!-- CONTENT -->
@@ -591,23 +742,45 @@
             <rect y="24" width="48" height="7" rx="1" fill="#053B50" />
           </svg>
         </i>
-        <a href="#" class="nav-link">Categories</a>
+
         <form action="#">
           <div class="form-input">
             <input type="search" placeholder="Search..." />
-            <button type="submit" class="search-btn">
-              <i class="bx bx-search"></i>
-            </button>
           </div>
         </form>
         <input type="checkbox" id="switch-mode" hidden />
         <label for="switch-mode" class="switch-mode"></label>
         <a href="#" class="notification">
-          <i class="bx bxs-bell"></i>
-          <span class="num">8</span>
+          <svg
+            width="32"
+            height="30"
+            viewBox="0 0 32 30"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M24.7273 13.5H13.0909V16.5H24.7273V21L32 15L24.7273 9V13.5ZM26.1818 24H22.2429C20.5634 25.5275 18.4921 26.5228 16.2776 26.8664C14.0632 27.21 11.7996 26.8874 9.75854 25.9372C7.71747 24.9871 5.98563 23.4498 4.77081 21.5097C3.55599 19.5697 2.90981 17.3094 2.90981 15C2.90981 12.6906 3.55599 10.4303 4.77081 8.49028C5.98563 6.55025 7.71747 5.01291 9.75854 4.06275C11.7996 3.11259 14.0632 2.78996 16.2776 3.13359C18.4921 3.47722 20.5634 4.4725 22.2429 6H26.1818C24.8281 4.13577 23.0715 2.62277 21.0515 1.58122C19.0315 0.539663 16.8039 -0.00174546 14.5455 4.22743e-06C6.512 4.22743e-06 0 6.7155 0 15C0 23.2845 6.512 30 14.5455 30C16.8039 30.0017 19.0315 29.4603 21.0515 28.4188C23.0715 27.3772 24.8281 25.8642 26.1818 24Z"
+              fill="#053B50"
+            />
+          </svg>
         </a>
         <a href="#" class="profile">
-          <img src="img/people.png" />
+          <svg
+            width="32"
+            height="40"
+            viewBox="0 0 32 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15.9999 21.3333C13.8903 21.3333 11.828 20.7077 10.0738 19.5357C8.31972 18.3636 6.95254 16.6977 6.14521 14.7486C5.33787 12.7995 5.12664 10.6548 5.53821 8.58571C5.94979 6.51658 6.96569 4.61596 8.45745 3.1242C9.94921 1.63244 11.8498 0.616537 13.919 0.204962C15.9881 -0.206614 18.1328 0.00462166 20.0819 0.811956C22.031 1.61929 23.6969 2.98646 24.8689 4.74059C26.041 6.49471 26.6666 8.557 26.6666 10.6667C26.6666 13.4956 25.5428 16.2088 23.5424 18.2091C21.542 20.2095 18.8289 21.3333 15.9999 21.3333ZM15.9999 2.66667C14.4177 2.66667 12.871 3.13586 11.5554 4.01491C10.2398 4.89397 9.21439 6.14339 8.60889 7.6052C8.00339 9.06701 7.84496 10.6755 8.15364 12.2274C8.46232 13.7792 9.22425 15.2047 10.3431 16.3235C11.4619 17.4423 12.8874 18.2043 14.4392 18.513C15.991 18.8216 17.5996 18.6632 19.0614 18.0577C20.5232 17.4522 21.7726 16.4268 22.6517 15.1112C23.5307 13.7956 23.9999 12.2489 23.9999 10.6667C23.9999 8.54494 23.1571 6.51011 21.6568 5.00982C20.1565 3.50953 18.1217 2.66667 15.9999 2.66667Z"
+              fill="#053B50"
+            />
+            <path
+              d="M25.3333 40H6.66667C4.89856 40 3.20286 39.2976 1.95262 38.0474C0.702379 36.7971 0 35.1014 0 33.3333V28C4.03568e-05 27.7686 0.0602978 27.5412 0.174848 27.3402C0.289398 27.1391 0.454297 26.9713 0.653333 26.8533L7.32 22.8533C7.62079 22.7174 7.96131 22.6979 8.27567 22.7985C8.59003 22.8992 8.85589 23.1128 9.02179 23.3982C9.1877 23.6835 9.24186 24.0203 9.1738 24.3433C9.10573 24.6663 8.92028 24.9525 8.65333 25.1467L2.66667 28.76V33.3333C2.66667 34.3942 3.08809 35.4116 3.83824 36.1618C4.58839 36.9119 5.6058 37.3333 6.66667 37.3333H25.3333C26.3942 37.3333 27.4116 36.9119 28.1618 36.1618C28.9119 35.4116 29.3333 34.3942 29.3333 33.3333V28.76L23.32 25.1467C23.15 25.0698 22.998 24.9582 22.8739 24.8189C22.7497 24.6797 22.6562 24.5159 22.5993 24.3382C22.5424 24.1605 22.5234 23.9729 22.5436 23.7874C22.5638 23.602 22.6227 23.4228 22.7164 23.2615C22.8102 23.1002 22.9368 22.9604 23.088 22.8511C23.2392 22.7418 23.4116 22.6655 23.5942 22.627C23.7767 22.5885 23.9653 22.5888 24.1478 22.6278C24.3302 22.6668 24.5025 22.7436 24.6533 22.8533L31.32 26.8533C31.524 26.968 31.6942 27.1343 31.8136 27.3356C31.933 27.5369 31.9972 27.766 32 28V33.3333C32 35.1014 31.2976 36.7971 30.0474 38.0474C28.7971 39.2976 27.1014 40 25.3333 40Z"
+              fill="#053B50"
+            />
+          </svg>
         </a>
       </nav>
       <!-- NAVBAR -->
